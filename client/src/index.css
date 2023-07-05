@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Inter:wght@600;800&display=swap');
+
+:root {
+	--dark-color: #1a2323;
+	--red-color: #e63946;
+	--pink-color: #ff6864;
+	--yellow-color: #ffca28;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	padding: 5rem 0;
+	color: #fff;
+}
+
+section h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	line-height: 48px;
+	position: relative;
+}
+
+section h2::after {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 4px;
+	background-color: var(--red-color);
+	left: 0;
+	bottom: -8px;
+}
+
+section h2.light::after {
+	background-color: var(--yellow-color);
+}
+
+.black {
+	background-color: #000;
+}
+
+.dark-gray {
+	background-color: var(--dark-color);
+}
+
+.pink {
+	background-color: var(--pink-color);
+}
+
+section .content-container {
+	display: flex;
+}
+
+/* Tablet version */
+
+@media (max-width: 1040px) {
+	.wrapper {
+		max-width: 694px;
+	}
+}
+
+/* Smartphone version */
+@media (max-width: 720px) {
+	.wrapper {
+		padding: 0 2rem;
+	}
+
+	section h2 {
+		font-size: 1.5rem;
+	}
+
+	section h2::after {
+		width: 50px;
+		bottom: 0;
+	}
+}

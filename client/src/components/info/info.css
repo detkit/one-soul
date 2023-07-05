@@ -1,0 +1,54 @@
+#info .info-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	gap: 4px;
+	margin-top: 3.63rem;
+}
+
+#info .info-content .amount {
+	font-weight: 800;
+	font-size: 2.5rem;
+}
+
+#info .info-content .type {
+	font-weight: 700;
+	font-family: 'Alegreya', serif;
+	font-size: 1.875rem;
+}
+
+#info .wrapper {
+	position: relative;
+}
+
+#info .bgEl-2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/* Smartphone version */
+@media (max-width: 720px) {
+	#info .content-container {
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	#info .content-container img {
+		height: 100px;
+	}
+
+	#info .info-content .amount {
+		font-size: 2rem;
+	}
+
+	#info .info-content .type {
+		font-size: 1.5rem;
+	}
+
+	#info .bgEl-2 {
+		left: 2rem;
+	}
+}
